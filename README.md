@@ -115,7 +115,7 @@ I'm sorry about unoptimized database structures.
 - `urbans`
     - `urban_id` INTEGER PRIMARY KEY AUTOINCREMENT
     - `urban_name` varchar(255) -> `INDEX` -> `CONSTRAINT urbans.urban_name -> urbans.subdistrict_id`
-    - `postal_code` INTEGER -> `UNIQUE INDEX`
+    - `postal_code` INTEGER -> `INDEX`
     - `subdistrict_id` INTEGER -> `REFERENCES subdistricts.subdistrict_id`
 
 
